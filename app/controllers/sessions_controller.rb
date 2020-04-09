@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete(:user_id)
-    redirect_to '/', :flash => { :error => "You have been logged out." }
+    redirect_to '/', :flash => { :notice => "You have been logged out." }
   end
 
   private
