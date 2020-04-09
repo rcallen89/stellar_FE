@@ -11,4 +11,5 @@ services:
 
 before_script:
   - psql -c 'create database stellar_FE_test;' -U postgres
+  - RAILS_ENV=test bundle exec rails webpacker:compile
 
