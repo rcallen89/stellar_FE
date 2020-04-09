@@ -70,10 +70,9 @@ RSpec.describe 'As a visitor' do
 
     it 'I can login as a returning user with Google Oauth' do
       stub_omniauth
-      user = create(:user, email: "alison.minton@gmail.com",
-                           first_name: "Alison",
-                           last_name: "Minton",
-                           image: "https://lh3.googleusercontent.com/a-/AAuE7mCBgq8kmZ4WnKkIrlNB5osGhDM8rkQxeh14ZxoxgA")
+      user = create(:user, email: "will@gmail.com",
+                           first_name: "Will",
+                           last_name: "Meighan")
 
       visit '/'
 
