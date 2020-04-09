@@ -5,7 +5,7 @@ services:
   - postgresql
 
 before_script:
-  - cp config/database.yml
+  - psql -c 'create database stellar_FE_test;' -U postgres
 
 env:
   - ENV['RAILS_ENV'] = 'test'
