@@ -1,0 +1,10 @@
+<center>
+  <h1>Welcome!</h1>
+    <h3>The final frontier is at your fingertips.</h3>
+
+    <% if current_user %>
+      <p>Happy exploring!</p>
+    <% else %>
+      <%= button_to 'Sign-In with Google', google_oauth2_login_path, class: "button"%>
+    <% end %>
+</center>
