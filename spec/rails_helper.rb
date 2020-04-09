@@ -80,4 +80,17 @@ RSpec.configure do |config|
       with.library :rails
     end
   end
+
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+
+    OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+      :provider => 'google_oauth2',
+      :info =>   {"name"=>"Will Meighan",
+                  "email"=>"will@gmail.com",
+                  "first_name"=>"Will",
+                  "last_name"=>"Meighan"},
+      :credentials => {token: ENV['GOOGLE_TOKEN']}
+      })
+  end
 end
