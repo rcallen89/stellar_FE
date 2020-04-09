@@ -1,0 +1,15 @@
+language:
+  - ruby 
+
+script:
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec
+
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database stellar_FE_test;' -U postgres
+  - nvm install v11.12.0
+  - nvm use v11.12.0
+  - yarn add stimulus
