@@ -1,5 +1,10 @@
 language:
   - ruby 
+  
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec
 
 services:
   - postgresql
@@ -7,5 +12,3 @@ services:
 before_script:
   - psql -c 'create database stellar_FE_test;' -U postgres
 
-env:
-  - ENV['RAILS_ENV'] = 'test'
