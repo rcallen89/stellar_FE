@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'faraday'
 gem 'figaro'
 gem 'capybara'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
 
 # Use Active Storage Avariant
 # gem 'image_processing', '~> 1.2'
