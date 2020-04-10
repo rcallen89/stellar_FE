@@ -9,6 +9,8 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'vcr'
 require 'webmock/rspec'
+require 'support/factory_bot'
+
 
 VCR.configure do |config|
   config.ignore_localhost = true
