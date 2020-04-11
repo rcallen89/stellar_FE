@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'faraday'
 gem 'figaro'
 gem 'capybara'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 # Use Active Storage Avariant
