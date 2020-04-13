@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://stellar-be.herokuapp.com/people-in-space
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '238'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Mon, 13 Apr 2020 21:13:45 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"name":"Andrew Morgan","craft":"ISS"},{"name":"Oleg Skripochka","craft":"ISS"},{"name":"Jessica
+        Meir","craft":"ISS"},{"name":"Chris Cassidy","craft":"ISS"},{"name":"Anatoly
+        Ivanishin","craft":"ISS"},{"name":"Ivan Vagner","craft":"ISS"}]'
+    http_version: null
+  recorded_at: Mon, 13 Apr 2020 21:13:45 GMT
+recorded_with: VCR 5.1.0
