@@ -19,4 +19,10 @@ RSpec.describe 'Navbar Links', type: :feature do
     expect(page).to have_content('Profile')
     expect(page).to have_content('Log Out')
   end
+
+  it 'visitor cannot navigate to profile' do
+    visit '/profile'
+    expect(page.status_code).to eq(404)
+  end
+
 end
