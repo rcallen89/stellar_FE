@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
 
+  get '/space_people', to: 'space_people#index'
 end
