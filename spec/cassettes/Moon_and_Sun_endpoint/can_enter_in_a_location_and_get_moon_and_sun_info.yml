@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stellar-be.herokuapp.com/iotd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1278'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Mon, 13 Apr 2020 22:59:39 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"date":"2020-04-13","explanation":"How did this big rock end up on
+        this strange terrain? One of the more unusual places here on Earth occurs
+        inside Death Valley, California, USA.  There a dried lakebed named Racetrack
+        Playa exists that is almost perfectly flat, with the odd exception of some
+        very large stones, one of which is pictured here in April of 2019 beneath
+        a dark, Milky-Way filled sky.  Now the flatness and texture of large playa
+        like Racetrack are fascinating but not scientifically puzzling -- they are
+        caused by mud flowing, drying, and cracking after a heavy rain.  Only recently,
+        however, has a viable scientific hypothesis been given to explain how heavy  sailing
+        stones end up near the middle of such a large flat surface.  Unfortunately,
+        as frequently happens in science, a seemingly surreal problem ends up having
+        a relatively mundane solution.  It turns out that in winter thin ice sheets
+        form, and winds push ice sections laden with even heavy rocks across the temporarily
+        slick playa when sunlight melts the ice.","hdurl":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_1366.jpg","media_type":"image","service_version":"v1","title":"A
+        Sailing Stone across Death Valley","url":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_960.jpg"}'
+    http_version: null
+  recorded_at: Mon, 13 Apr 2020 22:59:39 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/premium/v1/astronomy.ashx?key=&q=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.worldweatheronline.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 13 Apr 2020 23:32:20 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-IL1-617
+      Cdn-Pullzone:
+      - '61832'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Cdn-Edgestorageid:
+      - '617'
+      Cache-Control:
+      - public, max-age=5
+      Cdn-Cachedat:
+      - '2020-04-13 18:32:20'
+      Cdn-Requestid:
+      - 268ae1d2d25c0907f2f3f359692a6fee
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><data><error><msg>Parameter key
+        is missing from the request URL</msg></error></data>
+    http_version: null
+  recorded_at: Mon, 13 Apr 2020 23:32:20 GMT
+- request:
+    method: get
+    uri: http://stellar-be.herokuapp.com/astronomy?query=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '214'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Mon, 13 Apr 2020 23:34:34 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"localtime":"2020-04-13 17:33","utcOffset":"-6.0","zone":"America/Denver","sunrise":"06:24
+        AM","sunset":"07:37 PM","moonrise":"01:16 AM","moonset":"10:44 AM","moon_phase":"Waning
+        Gibbous","moon_illumination":"53"}'
+    http_version: null
+  recorded_at: Mon, 13 Apr 2020 23:34:35 GMT
+recorded_with: VCR 5.1.0
