@@ -6,7 +6,7 @@ RSpec.describe 'As a user' do
       Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
     end
 
-    it 'I can logout' do
+    it 'I can logout', :vcr do
       visit '/'
 
       expect(page).to_not have_link('Log Out')
