@@ -5,7 +5,7 @@ RSpec.describe "Space people endpoint", :vcr do
     @user = User.create!(uid: 13,
                         first_name: "Meghan",
                         last_name: "Stovall",
-                        google_token: "#{ENV['GOOGLE_TOKEN']}",
+                        google_token: "abc123def456ghi789",
                         email: "meghan.stovall@gmail.com")
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
