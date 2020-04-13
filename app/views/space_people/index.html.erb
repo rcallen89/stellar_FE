@@ -1,0 +1,13 @@
+<h1>Astronauts Currently in Space: </h1>
+<ul class="people-in-space">
+  <% @space_people_facade.names.each do |name| %>
+    <li id="name"> name </li>
+  <% end %>
+</ul>
+
+<h1>Space Crafts Currently in Space: </h1>
+<ul class="crafts-in-space">
+  <% @space_people_facade.crafts.each do |craft| %>
+    <li id="craft"> craft </li>
+  <% end %>
+</ul>
