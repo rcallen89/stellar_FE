@@ -6,7 +6,7 @@ RSpec.describe 'As a visitor' do
       Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
     end
 
-    it 'I can register and login with Google Oauth' do
+    it 'I can register and login with Google Oauth', :vcr do
       stub_omniauth
 
       visit '/'
@@ -23,7 +23,7 @@ RSpec.describe 'As a visitor' do
 
     end
 
-    it 'I can login as a returning user with Google Oauth' do
+    it 'I can login as a returning user with Google Oauth', :vcr do
       stub_omniauth
       user = create(:user, email: "will@gmail.com",
                            first_name: "Will",
