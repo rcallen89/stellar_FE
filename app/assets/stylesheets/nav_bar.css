@@ -35,15 +35,30 @@
 #right-pine-tree {
   float: right;
   margin-right: -16px;
-  margin-bottom: -23px;
+  padding: 0px;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
 }
 
-#iod img{
+.iotd {
+  border: rgba(167, 163, 163, 0.774) outset 4px;
+  box-shadow: 10px 10px 10px 12px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  height: auto%;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
   padding: auto;
-  height: inherit;
-  width: 100%;
 }
 
 #google-button {
   box-shadow: 2, 2, black;
+}
+
+.api-text {
+  color: white;
+  background-color: rgba(80, 77, 77, 0.822);
+  outline: rgba(26, 25, 25, 0.774) solid 4px;
+  box-shadow: 10px 10px 10px 12px rgba(0, 0, 0, 0.3);
 }
