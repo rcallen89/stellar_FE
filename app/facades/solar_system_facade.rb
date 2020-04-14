@@ -22,15 +22,15 @@ class SolarSystemFacade
   end
 
   def discovered_by
-    @data[:discoveredBy]
+    "N/A" unless @data[:discoveredBy] != ""
   end
 
   def discovered_on
-    @data[:discoveryDate]
+    "N/A" unless @data[:discoveryDate] != ""
   end
 
   def moons
-    @data[:moons]
+    @data[:moons].count
   end
 
   def mass

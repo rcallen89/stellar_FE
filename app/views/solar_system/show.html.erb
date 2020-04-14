@@ -1,5 +1,5 @@
 <h1>Solar System Object: <%= @object.name %></h1>
-<h3>Planet?: <%= @object.planet? %></h3>
+<h3>Planet? <%= @object.planet? %></h3>
 
 <ul class="solar-system-data">
   <% if @object.around_planet != nil %>
@@ -10,10 +10,7 @@
   <li id="discovered_on"> Date of Discovery: <%= @object.discovered_on %> </li>
   
   <% if @object.moons != nil %>
-    <li id="moons"> Moons: <% @object.moons.each do |moon| %>
-        <p><%= moon[:moon] %></p>
-      <% end %>
-    </li>
+    <li id="moons"> Number of Moons: <%= @object.moons %>
   <% end %>
   
   <li id="mass"> Mass: <%= @object.mass %> </li>
