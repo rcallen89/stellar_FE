@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get '/space_people', to: 'space_people#index'
   get '/sun_and_moon_search', to: 'solar_search#search'
   get '/sun_and_moon', to: 'solar_search#show'
-  get '/favorites', to: 'favorites#index'
+  get '/favorites/:id', to: 'favorites#index'
 end
