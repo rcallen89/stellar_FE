@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
   
-  get '/search', to: ''
+  get '/search', to: 'solar_system#show'
 
   get '/space_people', to: 'space_people#index'
   get '/sun_and_moon_search', to: 'solar_search#search'
