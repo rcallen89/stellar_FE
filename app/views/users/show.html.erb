@@ -1,3 +1,9 @@
 <center>
-  <h1>Hi, <%= current_user.first_name %>!</h1>
+  <h1><font color="white"> Hi, <%= current_user.first_name %>!</font></h1>
+  <br></br>
+  <h2><font color="white">Name: <%= current_user.first_name %> <%= current_user.last_name %></font></h2>
+  <h2><font color="white">Joined: <%= current_user.created_at %></font></h2>
+  <br></br>
+  <h2><font color="white"><%=link_to "Favorites", '/favorites' %></font></h2>
+
 </center>
