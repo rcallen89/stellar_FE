@@ -14,13 +14,11 @@ RSpec.describe 'As a user' do
 
       expect(current_path).to eq('/profile')
       expect(page).to have_content("Hi, #{user.first_name}!")
-      
+
       fill_in "search", with: "Jupiter"
       click_button 'Search'
-      
+
       expect(current_path).to eq('/search')
-      
-      save_and_open_page
     end
   end
 end
