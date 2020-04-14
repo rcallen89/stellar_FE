@@ -12,12 +12,6 @@
   <body>
   <div class="container-fluid">
 
-    <div class="flash-message">
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, class: name %>
-      <% end %>
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(50, 50, 50, 0.0); margin-left: -20px; margin-right: -15px;">
 
       <a class="navbar-brand" href="/"><span class="app-name" style="font-size: 25px; margin-left: 15px;">Stellar</span>
@@ -32,7 +26,6 @@
           <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
 
-
           <span class="form-inline">
 
           <%= link_to 'Profile', profile_path, class: "btn btn-sm btn-dark"%>
@@ -43,6 +36,13 @@
       </span>
 
     </nav>
+
+    <div class="api-text">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: name %>
+      <% end %>
+    </div>
+
     <%= yield %>
 
   </div>
