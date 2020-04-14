@@ -25,4 +25,25 @@ RSpec.describe 'Navbar Links', type: :feature do
     expect(page.status_code).to eq(404)
   end
 
+  it 'visitor cannot navigate to sun and moon search page ' do
+    visit '/sun_and_moon_search'
+    expect(page.status_code).to eq(404)
+  end
+
+  it 'visitor cannot navigate to sun and moon show page ' do
+    visit '/sun_and_moon'
+    expect(page.status_code).to eq(404)
+  end
+
+  it 'visitor cannot navigate to people in space page ' do
+    visit '/space_people'
+    expect(page.status_code).to eq(404)
+  end
+
+  it 'visitor cannot navigate to solar system search page ' do
+    visit '/search'
+    expect(page.status_code).to eq(404)
+  end
+
+
 end
