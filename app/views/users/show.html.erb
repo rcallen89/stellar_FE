@@ -4,6 +4,6 @@
   <h2><font color="white">Name: <%= current_user.first_name %> <%= current_user.last_name %></font></h2>
   <h2><font color="white">Joined: <%= current_user.created_at %></font></h2>
   <br></br>
-  <h2><font color="white"><%=link_to "Favorites", "/favorites/#{current_user.id}" %></font></h2>
+  <h2><%=link_to "Favorites", "/favorites/#{current_user.id}" %></h2>
 
 </center>
