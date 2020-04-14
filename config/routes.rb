@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   
   get '/search', to: ''
 
+  get '/space_people', to: 'space_people#index'
+  get '/sun_and_moon_search', to: 'solar_search#search'
+  get '/sun_and_moon', to: 'solar_search#show'
 end
