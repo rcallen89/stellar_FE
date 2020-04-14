@@ -1,13 +1,12 @@
-<h1>Astronauts Currently in Space: </h1>
-<ul class="people-in-space">
-  <% @space_people_facade.names.each do |name| %>
-    <li id="name"> name </li>
-  <% end %>
-</ul>
+<section class='api-text'>
+  <h1>Astronauts Currently in Space: </h1>
 
-<h1>Space Crafts Currently in Space: </h1>
-<ul class="crafts-in-space">
-  <% @space_people_facade.crafts.each do |craft| %>
-    <li id="craft"> craft </li>
+  <% if @space_people_facade.data.empty? || @space_people_facade.data == nil%>
+    <h3>There is no one in space at this time.</h3>
+  <% else %>
+    <ul class="people-crafts-in-space">
+    <% @space_people_facade.data.each do |name_craft| %>
+      <li id="name"> <%= name_craft[:name] %> is currently on <%= name_craft[:craft] %></li>
+    <% end %>
   <% end %>
-</ul>
+</section>
