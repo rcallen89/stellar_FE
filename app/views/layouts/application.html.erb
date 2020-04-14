@@ -12,6 +12,12 @@
   <body>
   <div class="container-fluid">
 
+    <div class="flash-message">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: name %>
+      <% end %>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(50, 50, 50, 0.0); margin-left: -20px; margin-right: -15px;">
 
       <a class="navbar-brand" href="/"><span class="app-name" style="font-size: 25px; margin-left: 15px;">Stellar</span>
