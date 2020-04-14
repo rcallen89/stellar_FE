@@ -30,4 +30,14 @@ RSpec.describe "Moon and Sun endpoint", :vcr do
       expect(first('#moon_illumination').text).to_not be_empty
     end
   end
+
+  it "will get redirected to search page after entering an invalid location" do
+    visit '/sun_and_moon_search'
+
+    fill_in "location", with: "abcd"
+    click_on "Enter"
+    expect(current_path).to eq('/sun_and_moon_search')
+
+    expect(page).to have_content("Please enter a valid location. (city name, or city name and state)")
+  end
 end
