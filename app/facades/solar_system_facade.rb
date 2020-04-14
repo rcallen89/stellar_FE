@@ -1,6 +1,6 @@
 class SolarSystemFacade
   attr_reader :data
-  
+
   def initialize(query)
     @data = StellarService.new.search(query)
   end
@@ -8,7 +8,7 @@ class SolarSystemFacade
   def name
     @data[:englishName]
   end
-  
+
   def planet?
     if @data[:isPlanet]
       "Yes"
@@ -16,7 +16,7 @@ class SolarSystemFacade
       "No"
     end
   end
-  
+
   def around_planet
     @data[:aroundPlanet]
   end
@@ -30,7 +30,11 @@ class SolarSystemFacade
   end
 
   def moons
-    @data[:moons].count
+    if @data[:moons]
+      @data[:moons].count
+    else
+      0
+    end
   end
 
   def mass
@@ -44,7 +48,7 @@ class SolarSystemFacade
   def density
     @data[:density]
   end
-  
+
   def gravity
     @data[:gravity]
   end

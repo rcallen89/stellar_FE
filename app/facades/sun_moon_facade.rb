@@ -3,7 +3,7 @@ class SunMoonFacade
   attr_reader :data
 
   def initialize(location)
-    @data = SunMoonService.get_data(location)
+    @data = StellarService.get_data(location)
   end
 
   def zone
