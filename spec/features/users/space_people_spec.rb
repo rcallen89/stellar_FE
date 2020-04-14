@@ -17,14 +17,9 @@ RSpec.describe "Space people endpoint", :vcr do
     click_on "People in Space"
     expect(current_path).to eq("/space_people")
     expect(page).to have_content("Astronauts Currently in Space:")
-    expect(page).to have_content("Space Crafts Currently in Space:")
 
-    within ".people-in-space" do
+    within ".people-crafts-in-space" do
       expect(first('#name').text).to_not be_empty
-    end
-
-    within ".crafts-in-space" do
-      expect(first('#craft').text).to_not be_empty
     end
   end
 end
