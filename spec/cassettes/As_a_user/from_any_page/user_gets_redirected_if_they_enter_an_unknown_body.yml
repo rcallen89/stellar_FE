@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stellar-be.herokuapp.com/iotd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1448'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Tue, 14 Apr 2020 17:50:15 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"date":"2020-04-14","explanation":"NGC 253 is one of the brightest
+        spiral galaxies visible, but also one of the dustiest.  Dubbed the Silver
+        Coin for its appearance in smalltelescopes, it is more formally known as the
+        Sculptor Galaxy for its location within the boundaries of the southern constellation
+        Sculptor.  Discovered in 1783 by mathematician and astronomer Caroline Herschel,
+        the dusty island universe lies a mere 10 million light-years away. About 70
+        thousand light-years across, NGC 253, pictured, is the largest member of the
+        Sculptor Group of Galaxies, the nearest to our own Local Group of galaxies.  In
+        addition to its spiral dust lanes, tendrils of dust seem to be rising from
+        a galactic disk laced with young star clusters and star forming regions in
+        this sharp color image. The high dust content accompanies frantic star formation,
+        earning NGC 253 the designation of a starburst galaxy. NGC 253 is also known
+        to be a strong source of high-energy x-rays and gamma rays, likely due to
+        massive black holes near the galaxy''s center. Take a trip through extragalactic
+        space in this short video flyby of NGC 253.   Astrophysicists: Browse 2,100+
+        codes in the Astrophysics Source Code Library","hdurl":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_3500.jpg","media_type":"image","service_version":"v1","title":"NGC
+        253: The Silver Coin Galaxy","url":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_960.jpg"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 17:50:15 GMT
+- request:
+    method: get
+    uri: https://stellar-be.herokuapp.com/search?query=Pluto
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: 'Internal Server Error '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '30'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Tue, 14 Apr 2020 17:50:16 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: "<h1>Internal Server Error</h1>"
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 17:50:16 GMT
+- request:
+    method: get
+    uri: https://stellar-be.herokuapp.com/iotd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1448'
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
+      Date:
+      - Tue, 14 Apr 2020 17:56:48 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"date":"2020-04-14","explanation":"NGC 253 is one of the brightest
+        spiral galaxies visible, but also one of the dustiest.  Dubbed the Silver
+        Coin for its appearance in smalltelescopes, it is more formally known as the
+        Sculptor Galaxy for its location within the boundaries of the southern constellation
+        Sculptor.  Discovered in 1783 by mathematician and astronomer Caroline Herschel,
+        the dusty island universe lies a mere 10 million light-years away. About 70
+        thousand light-years across, NGC 253, pictured, is the largest member of the
+        Sculptor Group of Galaxies, the nearest to our own Local Group of galaxies.  In
+        addition to its spiral dust lanes, tendrils of dust seem to be rising from
+        a galactic disk laced with young star clusters and star forming regions in
+        this sharp color image. The high dust content accompanies frantic star formation,
+        earning NGC 253 the designation of a starburst galaxy. NGC 253 is also known
+        to be a strong source of high-energy x-rays and gamma rays, likely due to
+        massive black holes near the galaxy''s center. Take a trip through extragalactic
+        space in this short video flyby of NGC 253.   Astrophysicists: Browse 2,100+
+        codes in the Astrophysics Source Code Library","hdurl":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_3500.jpg","media_type":"image","service_version":"v1","title":"NGC
+        253: The Silver Coin Galaxy","url":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_960.jpg"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 17:56:48 GMT
+recorded_with: VCR 5.1.0
