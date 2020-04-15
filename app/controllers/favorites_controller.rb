@@ -1,7 +1,9 @@
 class FavoritesController < ApplicationController
 
   def index
-    current_user
+    if params[:user_id]
+      @user = User.find(params[:current_user.id])
+    end
   end
 
   def show
