@@ -1,0 +1,28 @@
+<section class='api-text'>
+  <h3><%= link_to "Return to Favorites", "/favorites" %></h3>
+  <% if @object.data == nil %>
+    <h3>We're sorry, this favorite does not currently return any results.</h3>
+  <% else %>
+    <h1>Solar System Object: <%= @object.name %></h1>
+    <h3>Planet? <%= @object.planet? %></h3>
+
+    <ul class="solar-system-data">
+      <% if @object.around_planet != nil %>
+        <li id="around_planet"> Satellite Of: <%= @object.around_planet %> </li>
+      <% end %>
+
+      <li id="discovered_by"> Discovered By: <%= @object.discovered_by %> </li>
+      <li id="discovered_on"> Date of Discovery: <%= @object.discovered_on %> </li>
+
+      <% if @object.moons != nil %>
+        <li id="moons"> Number of Moons: <%= @object.moons %>
+      <% end %>
+
+      <li id="mass"> Mass: <%= @object.mass %> </li>
+      <li id="volume"> Volume: <%= @object.volume %> </li>
+      <li id="density"> Density: <%= @object.density %> </li>
+      <li id="gravity"> Gravity: <%= @object.gravity %> </li>
+    </ul>
+  <% end %>
+
+</section>
