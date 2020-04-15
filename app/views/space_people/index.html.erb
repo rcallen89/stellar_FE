@@ -1,12 +1,15 @@
 <section class='api-text'>
-  <h1>Astronauts Currently in Space: </h1>
+  <h1>Astronauts Currently in Space: </h1><br>
 
   <% if @space_people_facade.data.empty? || @space_people_facade.data == nil%>
     <h3>There is no one in space at this time.</h3>
   <% else %>
     <ul class="people-crafts-in-space">
-    <% @space_people_facade.data.each do |name_craft| %>
-      <li id="name"> <%= name_craft[:name] %> is currently on <%= name_craft[:craft] %></li>
+    <% @space_people_facade.name_crafts.each do |craft, names| %>
+      <h3>Craft: <%= craft %></h3>
+      <% names.each do |name| %>
+      <li id="name"> <%= name %></li>
+      <% end %><br>
     <% end %>
   <% end %>
 </section>
