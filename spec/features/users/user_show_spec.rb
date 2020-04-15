@@ -19,9 +19,14 @@ RSpec.describe "User profile page", :vcr do
     expect(page).to have_link("Favorites")
   end
 
-  it "can click link to favorites" do
-    click_link "Favorites"
-    expect(current_path).to eq("/favorites/#{@user.id}")
+  it "can click link to view favorites" do
+    click_link "View Favorites"
+    expect(current_path).to eq("/favorites")
+  end
+
+  it "can click link to add favorite" do
+    click_link "Add to Favorites"
+    expect(current_path).to eq("/favorites/new")
   end
 
 end
