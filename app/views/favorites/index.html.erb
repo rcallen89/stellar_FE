@@ -6,7 +6,7 @@
   <% else %>
     <% current_user.favorites.each do |favorite| %>
       <h3><%= link_to favorite.name, "/favorites/#{favorite.id}" %></h3>
-      <p><%= button_to "Remove from Favorites", "/favorites/#{favorite.id}", method: :delete %></p>
+      <p><%= button_to "Remove #{favorite.name} from Favorites", "/favorites/#{favorite.id}", method: :delete %></p>
       <br></br>
     <% end %>
   <% end %>
