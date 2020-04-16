@@ -27,4 +27,15 @@
       <% end %>
     </div>
   </div>
+
+  <%= form_tag "/favorites", method: :post do %>
+    <%= hidden_field_tag :name, @object.name %>
+    <%= submit_tag "Add #{@object.name} to Favorites" %>
+  <% end %>
+
+
+
+
+
+
 </section>
