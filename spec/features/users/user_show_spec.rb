@@ -24,4 +24,17 @@ RSpec.describe "User profile page", :vcr do
     expect(current_path).to eq("/favorites")
   end
 
+  it "can edit user information" do
+    click_link "Edit Info"
+    expect(current_path).to eq("/profile/edit")
+    fill_in "first_name", with: ""
+    click_on "Update Info"
+    expect(page).to have_content("First name can't be blank")
+    fill_in "first_name", with: "Bob"
+    click_on "Update Info"
+    expect(current_path).to eq("/profile")
+    expect(page).to have_content("Hi, Bob!")
+    expect(page).to_not have_content("Hi, Will!")
+  end
+
 end
