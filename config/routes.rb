@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/', to:'welcome#index'
   get '/profile', to: 'users#show'
+  get '/profile/edit', to: 'users#edit'
+  patch '/profile', to: "users#update"
 
   get 'auth/google_oauth2', as: 'google_oauth2_login'
   get '/auth/:provider/callback', to: 'sessions#create'
