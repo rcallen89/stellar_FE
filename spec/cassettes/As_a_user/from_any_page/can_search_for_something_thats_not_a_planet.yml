@@ -23,39 +23,35 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1448'
+      - '1079'
       X-Content-Type-Options:
       - nosniff
       Server:
       - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
       Date:
-      - Tue, 14 Apr 2020 17:43:53 GMT
+      - Thu, 16 Apr 2020 18:26:48 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"date":"2020-04-14","explanation":"NGC 253 is one of the brightest
-        spiral galaxies visible, but also one of the dustiest.  Dubbed the Silver
-        Coin for its appearance in smalltelescopes, it is more formally known as the
-        Sculptor Galaxy for its location within the boundaries of the southern constellation
-        Sculptor.  Discovered in 1783 by mathematician and astronomer Caroline Herschel,
-        the dusty island universe lies a mere 10 million light-years away. About 70
-        thousand light-years across, NGC 253, pictured, is the largest member of the
-        Sculptor Group of Galaxies, the nearest to our own Local Group of galaxies.  In
-        addition to its spiral dust lanes, tendrils of dust seem to be rising from
-        a galactic disk laced with young star clusters and star forming regions in
-        this sharp color image. The high dust content accompanies frantic star formation,
-        earning NGC 253 the designation of a starburst galaxy. NGC 253 is also known
-        to be a strong source of high-energy x-rays and gamma rays, likely due to
-        massive black holes near the galaxy''s center. Take a trip through extragalactic
-        space in this short video flyby of NGC 253.   Astrophysicists: Browse 2,100+
-        codes in the Astrophysics Source Code Library","hdurl":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_3500.jpg","media_type":"image","service_version":"v1","title":"NGC
-        253: The Silver Coin Galaxy","url":"https://apod.nasa.gov/apod/image/2004/NGC253_HstSubaruEsoNew_960.jpg"}'
+      string: '{"data":{"copyright":"NAO Rozhen","date":"2020-04-16","explanation":"Cruising
+        through the inner solar system, Comet ATLAS C2019/Y4 has apparently fragmented.
+        Multiple separate condensations within its diffuse coma are visible in this
+        telescopic close-up from April 12, composed of frames tracking the comet''s
+        motion against trailing background stars. Discovered at the end of December
+        2019, this comet ATLAS showed a remarkably rapid increase in brightness in
+        late March. Northern hemisphere comet watchers held out hope that it would
+        become a bright nake-eye comet as it came closer to Earth in late April and
+        May. But fragmenting ATLAS is slowly fading in northern skies. The breakup
+        of comets is not uncommon though. This comet ATLAS is in an orbit similar
+        to the Great Comet of 1844 (C/1844 Y1) and both may be fragments of a single
+        larger comet.","hdurl":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg","media_type":"image","service_version":"v1","title":"Comet
+        ATLAS Breaks Up","url":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg"}}'
     http_version: null
-  recorded_at: Tue, 14 Apr 2020 17:43:54 GMT
+  recorded_at: Thu, 16 Apr 2020 18:26:48 GMT
 - request:
     method: get
-    uri: https://stellar-be.herokuapp.com/search?query=Ceres
+    uri: https://stellar-be.herokuapp.com/search?query=Io
     body:
       encoding: US-ASCII
       string: ''
@@ -76,57 +72,19 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '592'
+      - '235'
       X-Content-Type-Options:
       - nosniff
       Server:
       - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
       Date:
-      - Tue, 14 Apr 2020 17:43:54 GMT
+      - Thu, 16 Apr 2020 18:26:48 GMT
       Via:
       - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpZCI6ImNlcmVzIiwibmFtZSI6IigxKSBDw6lyw6hzIiwiZW5nbGlzaE5hbWUiOiIxIENlcmVzIiwiaXNQbGFuZXQiOnRydWUsIm1vb25zIjpudWxsLCJzZW1pbWFqb3JBeGlzIjo0MTM2OTAyNTAsInBlcmloZWxpb24iOjM4MjYyMDAwMCwiYXBoZWxpb24iOjQ0NTQxMDAwMCwiZWNjZW50cmljaXR5IjowLjA3NTgyLCJpbmNsaW5hdGlvbiI6MTAuNTkzLCJtYXNzIjp7Im1hc3NWYWx1ZSI6OS4zOTMsIm1hc3NFeHBvbmVudCI6MjB9LCJ2b2wiOnsidm9sVmFsdWUiOjQuMjEsInZvbEV4cG9uZW50Ijo5fSwiZGVuc2l0eSI6Mi4xNjEsImdyYXZpdHkiOjAuMjgsImVzY2FwZSI6NTEwLjAsIm1lYW5SYWRpdXMiOjQ3Ni4yLCJlcXVhUmFkaXVzIjo0ODcuMCwicG9sYXJSYWRpdXMiOjQ1NS4wLCJmbGF0dGVuaW5nIjowLjk2MTksImRpbWVuc2lvbiI6IiIsInNpZGVyYWxPcmJpdCI6MTY4MS42Mywic2lkZXJhbFJvdGF0aW9uIjo5LjA3LCJhcm91bmRQbGFuZXQiOm51bGwsImRpc2NvdmVyZWRCeSI6IkdpdXNlcHBlIFBpYXp6aSIsImRpc2NvdmVyeURhdGUiOiIwMS8wMS8xODAxIiwiYWx0ZXJuYXRpdmVOYW1lIjoiQTg5OSBPRiAtIDE5NDMgWEIifQ==
+      encoding: UTF-8
+      string: '{"data":{"englishName":"Io","isPlanet":false,"moons":null,"aroundPlanet":{"planet":"jupiter","rel":"https://api.le-systeme-solaire.net/rest/bodies/jupiter"},"discoveredBy":"Galileo
+        Galilei","discoveryDate":"07/01/1610","gravity":1.79}}'
     http_version: null
-  recorded_at: Tue, 14 Apr 2020 17:43:54 GMT
-- request:
-    method: get
-    uri: https://stellar-be.herokuapp.com/search?query=Vesta
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v1.0.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: 'OK '
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '522'
-      X-Content-Type-Options:
-      - nosniff
-      Server:
-      - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
-      Date:
-      - Tue, 14 Apr 2020 17:48:28 GMT
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpZCI6InZlc3RhIiwibmFtZSI6Iig0KSBWZXN0YSIsImVuZ2xpc2hOYW1lIjoiNCBWZXN0YSIsImlzUGxhbmV0IjpmYWxzZSwibW9vbnMiOm51bGwsInNlbWltYWpvckF4aXMiOjM1MzM0MzAwMCwicGVyaWhlbGlvbiI6MCwiYXBoZWxpb24iOjAsImVjY2VudHJpY2l0eSI6MCwiaW5jbGluYXRpb24iOjAsIm1hc3MiOnsibWFzc1ZhbHVlIjoyLjQsIm1hc3NFeHBvbmVudCI6MTZ9LCJ2b2wiOnsidm9sVmFsdWUiOjAuMCwidm9sRXhwb25lbnQiOjB9LCJkZW5zaXR5IjoxLjAsImdyYXZpdHkiOjAsImVzY2FwZSI6MCwibWVhblJhZGl1cyI6MzMuMCwiZXF1YVJhZGl1cyI6MCwicG9sYXJSYWRpdXMiOjAsImZsYXR0ZW5pbmciOjAsImRpbWVuc2lvbiI6IjM5w5czN8OXMjUiLCJzaWRlcmFsT3JiaXQiOjIuNzQsInNpZGVyYWxSb3RhdGlvbiI6MCwiYXJvdW5kUGxhbmV0IjpudWxsLCJkaXNjb3ZlcmVkQnkiOiJILiBXLiBPbGJlcnMiLCJkaXNjb3ZlcnlEYXRlIjoiMjkvMDMvMTgwNyIsImFsdGVybmF0aXZlTmFtZSI6IiJ9
-    http_version: null
-  recorded_at: Tue, 14 Apr 2020 17:48:28 GMT
+  recorded_at: Thu, 16 Apr 2020 18:26:48 GMT
 recorded_with: VCR 5.1.0

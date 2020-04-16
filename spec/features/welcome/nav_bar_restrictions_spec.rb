@@ -20,27 +20,27 @@ RSpec.describe 'Navbar Links', type: :feature do
     expect(page).to have_content('Log Out')
   end
 
-  it 'visitor cannot navigate to profile' do
+  it 'visitor cannot navigate to profile', :vcr do
     visit '/profile'
     expect(page.status_code).to eq(404)
   end
 
-  it 'visitor cannot navigate to sun and moon search page ' do
+  it 'visitor cannot navigate to sun and moon search page', :vcr do
     visit '/sun_and_moon_search'
     expect(page.status_code).to eq(404)
   end
 
-  it 'visitor cannot navigate to sun and moon show page ' do
+  it 'visitor cannot navigate to sun and moon show page', :vcr do
     visit '/sun_and_moon'
     expect(page.status_code).to eq(404)
   end
 
-  it 'visitor cannot navigate to people in space page ' do
+  it 'visitor cannot navigate to people in space page', :vcr do
     visit '/space_people'
     expect(page.status_code).to eq(404)
   end
 
-  it 'visitor cannot navigate to solar system search page ' do
+  it 'visitor cannot navigate to solar system search page', :vcr do
     visit '/search'
     expect(page.status_code).to eq(404)
   end

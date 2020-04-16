@@ -7,6 +7,11 @@ class ApplicationController < ActionController::Base
   end
 
   def require_user
-    render file: 'public/404', status: 404 unless current_user
+    if current_user == nil
+      redirect_to "/", status: "404"
+      flash[:error] = "Not Found"
+    end
   end
 end
+
+

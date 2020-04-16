@@ -1,4 +1,4 @@
-class SpacePeopleFacade
+class SpacePeople
 
   attr_reader :data
 

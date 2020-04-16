@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://stellar-be.herokuapp.com/astronomy?query=abcd
+    uri: https://stellar-be.herokuapp.com/astronomy?query=abcd
     body:
       encoding: US-ASCII
       string: ''
@@ -23,18 +23,18 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '4'
+      - '13'
       X-Content-Type-Options:
       - nosniff
       Server:
       - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
       Date:
-      - Tue, 14 Apr 2020 16:59:52 GMT
+      - Thu, 16 Apr 2020 18:27:17 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: 'null'
+      string: '{"data":null}'
     http_version: null
-  recorded_at: Tue, 14 Apr 2020 16:59:52 GMT
+  recorded_at: Thu, 16 Apr 2020 18:27:17 GMT
 recorded_with: VCR 5.1.0

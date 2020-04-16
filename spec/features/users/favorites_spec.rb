@@ -32,7 +32,8 @@ RSpec.describe "User profile page", :vcr do
   it 'can view a favorite' do
     visit '/favorites'
     click_link("Saturn")
-    expect(current_path).to eq("/favorites/#{@favorite.id}")
+    expect(current_path).to eq("/search")
+    expect(page).to have_content('Saturn')
   end
 
 end

@@ -23,34 +23,32 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1278'
+      - '1079'
       X-Content-Type-Options:
       - nosniff
       Server:
       - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
       Date:
-      - Mon, 13 Apr 2020 19:52:44 GMT
+      - Thu, 16 Apr 2020 18:27:07 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"date":"2020-04-13","explanation":"How did this big rock end up on
-        this strange terrain? One of the more unusual places here on Earth occurs
-        inside Death Valley, California, USA.  There a dried lakebed named Racetrack
-        Playa exists that is almost perfectly flat, with the odd exception of some
-        very large stones, one of which is pictured here in April of 2019 beneath
-        a dark, Milky-Way filled sky.  Now the flatness and texture of large playa
-        like Racetrack are fascinating but not scientifically puzzling -- they are
-        caused by mud flowing, drying, and cracking after a heavy rain.  Only recently,
-        however, has a viable scientific hypothesis been given to explain how heavy  sailing
-        stones end up near the middle of such a large flat surface.  Unfortunately,
-        as frequently happens in science, a seemingly surreal problem ends up having
-        a relatively mundane solution.  It turns out that in winter thin ice sheets
-        form, and winds push ice sections laden with even heavy rocks across the temporarily
-        slick playa when sunlight melts the ice.","hdurl":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_1366.jpg","media_type":"image","service_version":"v1","title":"A
-        Sailing Stone across Death Valley","url":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_960.jpg"}'
+      string: '{"data":{"copyright":"NAO Rozhen","date":"2020-04-16","explanation":"Cruising
+        through the inner solar system, Comet ATLAS C2019/Y4 has apparently fragmented.
+        Multiple separate condensations within its diffuse coma are visible in this
+        telescopic close-up from April 12, composed of frames tracking the comet''s
+        motion against trailing background stars. Discovered at the end of December
+        2019, this comet ATLAS showed a remarkably rapid increase in brightness in
+        late March. Northern hemisphere comet watchers held out hope that it would
+        become a bright nake-eye comet as it came closer to Earth in late April and
+        May. But fragmenting ATLAS is slowly fading in northern skies. The breakup
+        of comets is not uncommon though. This comet ATLAS is in an orbit similar
+        to the Great Comet of 1844 (C/1844 Y1) and both may be fragments of a single
+        larger comet.","hdurl":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg","media_type":"image","service_version":"v1","title":"Comet
+        ATLAS Breaks Up","url":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg"}}'
     http_version: null
-  recorded_at: Mon, 13 Apr 2020 19:52:44 GMT
+  recorded_at: Thu, 16 Apr 2020 18:27:08 GMT
 - request:
     method: get
     uri: https://stellar-be.herokuapp.com/iotd
@@ -74,32 +72,30 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1278'
+      - '1079'
       X-Content-Type-Options:
       - nosniff
       Server:
       - WEBrick/1.4.2 (Ruby/2.5.1/2018-03-29)
       Date:
-      - Mon, 13 Apr 2020 19:55:26 GMT
+      - Thu, 16 Apr 2020 18:27:10 GMT
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"date":"2020-04-13","explanation":"How did this big rock end up on
-        this strange terrain? One of the more unusual places here on Earth occurs
-        inside Death Valley, California, USA.  There a dried lakebed named Racetrack
-        Playa exists that is almost perfectly flat, with the odd exception of some
-        very large stones, one of which is pictured here in April of 2019 beneath
-        a dark, Milky-Way filled sky.  Now the flatness and texture of large playa
-        like Racetrack are fascinating but not scientifically puzzling -- they are
-        caused by mud flowing, drying, and cracking after a heavy rain.  Only recently,
-        however, has a viable scientific hypothesis been given to explain how heavy  sailing
-        stones end up near the middle of such a large flat surface.  Unfortunately,
-        as frequently happens in science, a seemingly surreal problem ends up having
-        a relatively mundane solution.  It turns out that in winter thin ice sheets
-        form, and winds push ice sections laden with even heavy rocks across the temporarily
-        slick playa when sunlight melts the ice.","hdurl":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_1366.jpg","media_type":"image","service_version":"v1","title":"A
-        Sailing Stone across Death Valley","url":"https://apod.nasa.gov/apod/image/2004/SailingStone_Burke_960.jpg"}'
+      string: '{"data":{"copyright":"NAO Rozhen","date":"2020-04-16","explanation":"Cruising
+        through the inner solar system, Comet ATLAS C2019/Y4 has apparently fragmented.
+        Multiple separate condensations within its diffuse coma are visible in this
+        telescopic close-up from April 12, composed of frames tracking the comet''s
+        motion against trailing background stars. Discovered at the end of December
+        2019, this comet ATLAS showed a remarkably rapid increase in brightness in
+        late March. Northern hemisphere comet watchers held out hope that it would
+        become a bright nake-eye comet as it came closer to Earth in late April and
+        May. But fragmenting ATLAS is slowly fading in northern skies. The breakup
+        of comets is not uncommon though. This comet ATLAS is in an orbit similar
+        to the Great Comet of 1844 (C/1844 Y1) and both may be fragments of a single
+        larger comet.","hdurl":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg","media_type":"image","service_version":"v1","title":"Comet
+        ATLAS Breaks Up","url":"https://apod.nasa.gov/apod/image/2004/C2019Y4_20.04.13_1100px.jpg"}}'
     http_version: null
-  recorded_at: Mon, 13 Apr 2020 19:55:26 GMT
+  recorded_at: Thu, 16 Apr 2020 18:27:11 GMT
 recorded_with: VCR 5.1.0
