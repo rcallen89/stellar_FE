@@ -23,9 +23,6 @@ RSpec.describe 'As a user' do
       within ".solar-system-data" do
         expect(first('#discovered_by').text).to_not be_empty
         expect(first('#discovered_on').text).to_not be_empty
-        expect(first('#mass').text).to_not be_empty
-        expect(first('#volume').text).to_not be_empty
-        expect(first('#density').text).to_not be_empty
         expect(first('#gravity').text).to_not be_empty
       end
     end
@@ -33,7 +30,7 @@ RSpec.describe 'As a user' do
     it "can search for something thats not a planet", :vcr do
       visit '/'
 
-      fill_in "search", with: "Vesta"
+      fill_in "search", with: "Io"
       click_button 'Search'
 
       expect(current_path).to eq('/search')
@@ -43,7 +40,7 @@ RSpec.describe 'As a user' do
     it "user gets redirected if they enter an unknown body", :vcr do
       visit '/'
 
-      fill_in "search", with: "Pluto"
+      fill_in "search", with: "asdf"
       click_button 'Search'
 
       expect(current_path).to eq('/')

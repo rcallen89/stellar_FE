@@ -8,7 +8,7 @@ class SolarObject
               :around_planet
 
   def initialize(api_data)
-    return "No Data" if api_data[:data].blank?
+    return "No Data" if api_data.blank?
     @name = api_data[:data][:englishName]
     @planet = (api_data[:data][:isPlanet] == true ? "Yes" : "No")
     @moons = moon_list(api_data[:data][:moons])
