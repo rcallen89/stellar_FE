@@ -8,7 +8,7 @@ RSpec.describe 'Navbar Links', type: :feature do
   end
 
   it 'As a user can see links to s/m, search bar, profile, and logout options', :vcr do
-    user = create(:user)
+    user = User.create(first_name: "Will", last_name: "Meighan", email: "williamdmeighan@gmail.com")
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
