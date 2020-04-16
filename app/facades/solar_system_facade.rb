@@ -2,7 +2,7 @@ class SolarSystemFacade
   attr_reader :data
 
   def initialize(query)
-    @data = StellarService.new.search(query)
+    @data = StellarService.search(query)
   end
 
   def name
