@@ -16,17 +16,12 @@ RSpec.describe "User profile page", :vcr do
     expect(page).to have_content("Hi, #{@user.first_name}")
     expect(page).to have_content("Name: #{@user.first_name} #{@user.last_name}")
     expect(page).to have_content("Joined: #{@user.created_at}")
-    expect(page).to have_link("Favorites")
+    expect(page).to have_button("View Favorites")
   end
 
   it "can click link to view favorites" do
-    click_link "View Favorites"
+    click_button "View Favorites"
     expect(current_path).to eq("/favorites")
-  end
-
-  it "can click link to add favorite" do
-    click_link "Add to Favorites"
-    expect(current_path).to eq("/favorites/new")
   end
 
 end
