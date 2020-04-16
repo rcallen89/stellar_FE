@@ -1,22 +1,30 @@
 <section class="api-text">
   <h1>Solar System Object: <%= @object.name %></h1>
-  <h3>Planet? <%= @object.planet? %></h3>
 
-  <ul class="solar-system-data">
-    <% if @object.around_planet != nil %>
-      <li id="around_planet"> Satellite Of: <%= @object.around_planet %> </li>
-    <% end %>
+  <div class="row">
+    <div class='col'>
+      <h3>Planet? <%= @object.planet %></h3>
 
-    <li id="discovered_by"> Discovered By: <%= @object.discovered_by %> </li>
-    <li id="discovered_on"> Date of Discovery: <%= @object.discovered_on %> </li>
+      <ul class="solar-system-data">
+        <% if @object.around_planet != nil %>
+          <li id="around_planet"> Satellite Of: <%= link_to @object.around_planet[:planet].capitalize, "/search?search=#{@object.around_planet[:planet]}" %> </li>
+        <% end %>
 
-    <% if @object.moons != nil %>
-      <li id="moons"> Number of Moons: <%= @object.moons %>
-    <% end %>
+        <li id="discovered_by"> Discovered By: <%= @object.discovered_by %> </li>
+        <li id="discovered_on"> Date of Discovery: <%= @object.discovered_on %> </li>
+        <li id="gravity"> Gravity: <%= @object.gravity %> </li>
+      </ul>
+    </div>
 
-    <li id="mass"> Mass: <%= @object.mass %> </li>
-    <li id="volume"> Volume: <%= @object.volume %> </li>
-    <li id="density"> Density: <%= @object.density %> </li>
-    <li id="gravity"> Gravity: <%= @object.gravity %> </li>
-  </ul>
+    <div class='col'>
+      <% if !(@object.moons.empty?) %>
+        <h2>Moons:</h2>
+        <ul>
+          <% @object.moons.each do |moon, search| %>
+            <li><%= link_to moon, "/search?search=#{search}" %>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
 </section>
