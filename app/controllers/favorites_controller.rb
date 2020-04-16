@@ -15,10 +15,15 @@ class FavoritesController < ApplicationController
   end
 
   def create
-    @favorite = current_user.favorites.create(favorite_params)
-    @favorite.save
-    flash[:success] = "#{@favorite.name} has been saved to favorites"
-    redirect_to "/favorites"
+    if repeat?
+      flash[:notice] = "You have already favorited this item."
+      redirect_to "/favorites"
+    else
+      @favorite = current_user.favorites.create(favorite_params)
+      @favorite.save
+      flash[:success] = "#{@favorite.name} has been saved to favorites"
+      redirect_to "/favorites"
+    end
   end
 
   def destroy
@@ -31,7 +36,12 @@ class FavoritesController < ApplicationController
   private
 
     def favorite_params
-      params.permit(:name)
+      params.permit(:name, :authenticity_token)
     end
 
+    def repeat?
+      current_user.favorites.any? do |favorite|
+        favorite.name == favorite_params[:name]
+      end
+    end
 end
