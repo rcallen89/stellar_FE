@@ -7,8 +7,8 @@ class FavoritesController < ApplicationController
   end
 
   def show
-    @favorite = Favorite.find(params[:favorite_id])
-    @object = SolarSystemFacade.new(@favorite.name)
+    favorite = Favorite.find(params[:favorite_id]).name
+    redirect_to "/search?search=#{favorite}"
   end
 
   def new
