@@ -1,7 +1,7 @@
 class StellarService
 
   def self.search(query)
-    Rails.cache.fetch('search_results', :expires_in => 12.hours) do
+    Rails.cache.fetch("search_results_#{query}", :expires_in => 12.hours) do
       response = Faraday.get("https://stellar-be.herokuapp.com/search?query=#{query}")
       if response.body.include?("Internal Server Error")
         nil
