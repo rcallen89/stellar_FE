@@ -24,6 +24,7 @@ gem 'figaro'
 gem 'capybara'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+gem 'dalli'
 
 # Use Active Storage Avariant
 # gem 'image_processing', '~> 1.2'
