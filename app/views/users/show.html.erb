@@ -4,8 +4,8 @@
     <br></br>
     <h2> Name: <%= current_user.first_name %> <%= current_user.last_name %></h2>
     <h2> Email: <%= current_user.email %></h2>
-    <h2> Joined: <%= current_user.created_at %></h2>
-    <p> <%= link_to "Edit Info", "/profile/edit" %> </p>
+    <h2> Joined: <%= current_user.created_at.to_date %></h2>
+    <p> <%= button_to "Edit Info", "/profile/edit", method: :get %> </p>
     <br></br>
     <h2><%=button_to "View Favorites", "/favorites" %></h2>
   </section>
