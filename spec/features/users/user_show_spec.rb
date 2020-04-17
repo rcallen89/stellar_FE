@@ -15,7 +15,7 @@ RSpec.describe "User profile page", :vcr do
   it "can see user info on user show page" do
     expect(page).to have_content("Hi, #{@user.first_name}")
     expect(page).to have_content("Name: #{@user.first_name} #{@user.last_name}")
-    expect(page).to have_content("Joined: #{@user.created_at}")
+    expect(page).to have_content("Joined: #{@user.created_at.to_date}")
     expect(page).to have_button("View Favorites")
   end
 
@@ -25,7 +25,7 @@ RSpec.describe "User profile page", :vcr do
   end
 
   it "can edit user information" do
-    click_link "Edit Info"
+    click_button "Edit Info"
     expect(current_path).to eq("/profile/edit")
     fill_in "first_name", with: ""
     click_on "Update Info"

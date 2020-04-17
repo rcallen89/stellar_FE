@@ -18,15 +18,16 @@
       </a>
 
       <% if current_user %>
-        <a href="/sun_and_moon_search" class='btn btn-dark my-2 my-sm-0'>Sun & Moon</a>
-        <a href="/space_people" class='btn btn-dark my-2 my-sm-0'>People in Space</a>
+        <a href="/sun_and_moon_search" class='btn btn-dark my-2 my-sm-0' style="margin-right: 10px;">Sun & Moon</a>
+
+        <a href="/space_people" class='btn btn-dark my-2 my-sm-0' style="margin-right: 40px;">People in Space</a>
 
         <form class="form-inline my-2 my-lg-0" action='/search'>
           <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-dark my-2 my-sm-0" type="submit" style="margin-right: 40px;">Search</button>
         </form>
 
-          <span class="form-inline">
+          <span class="form-inline" style="margin-right: 5px;">
 
           <%= link_to 'Profile', profile_path, class: "btn btn-sm btn-dark"%>
           <%= link_to 'Log Out', logout_path, class: "btn btn-sm btn-dark"%>
