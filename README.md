@@ -37,3 +37,4 @@ Project Collaborators;
 Ryan Allen - https://github.com/rcallen89
 Meghan Stovall - https://github.com/meghanstovall
 Will Meighan - https://github.com/Will-Meighan
+Ben Fox - https://github.com/benfox1216
